@@ -1,0 +1,109 @@
+/*
+Theme Name: Incamp
+Text Domain: incamp
+Version: 1
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Description: Thème pour le wordpress du site Incamp
+Tags: 
+Author: Cécile Gaultier
+Author URI: https://cecile-gaultier.fr
+Site URI: https://incamp.ceccile-gaultier.fr
+*/
+
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+	0. 	CSS Reset
+	1. 	Document Setup
+	2. 	Element Base
+	3. 	Helper Classes
+	4. 	Site Header
+	5. 	Menu Modal
+	6. 	Search Modal
+	7. 	Page Templates
+		a. 	Template: Cover Template
+		c. 	Template: Full Width
+	8.  Post: Archive
+	9.  Post: Single
+	10. Blocks
+	11. Entry Content
+	12. Comments
+	13. Site Pagination
+	14. Error 404
+	15. Widgets
+	16. Site Footer
+	17. Media Queries
+
+----------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+
+/*	16. Site Footer
+/* -------------------------------------------------------------------------- */
+footer fieldset button[type="submit"]{
+    border-radius: 2rem;
+    font-family: "Oswald",sans-serif;
+    letter-spacing: 3px;
+    font-size: .8rem;
+}
+
+#newsletter{
+    background-color: white;
+    border-radius: 2rem;
+    padding: .4rem;
+    border: 1px solid #3F7050;
+    font-size: .8rem;
+}
+
+#title{
+    border: none;
+}
+
+.fa-facebook-f, .fa-instagram{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+footer{
+    background-color: #F2F2F2;
+    font-size: .8rem;
+}
+
+footer i{
+    color: black;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	17. Media Queries
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width: 740px){
+
+    #guide-top{
+        padding-bottom: 25rem;
+    }
+
+    #error{
+        padding-bottom: 25rem;
+        padding-top: 15rem;
+    }
+}
+
+@media screen and (max-width: 440px){
+
+    .etape{
+        font-size: 3.2rem;
+    }
+}
