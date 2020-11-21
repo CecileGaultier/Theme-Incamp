@@ -13,7 +13,7 @@ get_header(); ?>
 
     <div class="row">
         <div class=" center col-md-8  col-lg-10 col-xl-8">
-
+        
         </div>
     </div>
 

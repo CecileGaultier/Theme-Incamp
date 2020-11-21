@@ -28,7 +28,7 @@ defined( 'ABSPATH' ) || die( "Can't access directly" );
 
 	<?php do_action( 'wpbf_body_open' ); ?>
 
-	<div id="container" class="hfeed wpbf-page">
+	<div class="hfeed wpbf-page">
 
 		<?php do_action( 'wpbf_before_header' ); ?>
 

@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 pl-3">
-                <img src="img/logos/incamp/logo-footer.png" alt="Image logo Incamp" class="img-fluid mb-2" style="max-width: 200px">
+                <img src="http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/logo-accueil.png" alt="Image logo Incamp" class="img-fluid mb-2" style="max-width: 200px">
                 <p>
                     InCamp, c'est une plateforme où vous pouvez retrouver toutes les initiatives vertes du campus de Montbéliard
                 </p>
@@ -50,7 +50,7 @@
             </div>
 
             <div class="col-3 md-pr-5 md-mt-3 d-none d-md-block">
-                <img src="img/logos/incamp/label-tepcv.png" class="img-fluid float-right" alt="Label TEPCV" style="max-width: 200px">
+                <img src="http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/tepcv.png" class="img-fluid float-right" alt="Label TEPCV" style="max-width: 200px">
             </div>
         </div>
     </div>
