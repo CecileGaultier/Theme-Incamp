@@ -1,6 +1,6 @@
 <?php
 /**
- * Index.
+ * Page template.
  *
  * @package Page Builder Framework
  */
@@ -14,9 +14,10 @@ get_header();
 ?>
 
 <div id="content">
+  <p>jgrongvhriojbeior</p>
 
 	<?php do_action( 'wpbf_content_open' ); ?>
-
+	
 	<?php wpbf_inner_content(); ?>
 
 		<?php do_action( 'wpbf_inner_content_open' ); ?>
@@ -25,39 +26,36 @@ get_header();
 
 			<?php do_action( 'wpbf_sidebar_left' ); ?>
 
-			<main id="main" class="wpbf-main wpbf-medium-2-3<?php echo wpbf_archive_class(); ?>">
+			<main id="main" class="wpbf-main wpbf-medium-2-3<?php echo wpbf_singular_class(); ?>">
 
 				<?php do_action( 'wpbf_main_content_open' ); ?>
 
+				<?php wpbf_title(); ?>
 
+				<?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-				
+				<div class="entry-content" itemprop="text">
 
-				<?php if( have_posts() ) : ?>
+					<?php do_action( 'wpbf_entry_content_open' ); ?>
 
-				<?php wpbf_archive_header(); ?>
+					<?php the_content(); ?>
 
-				<?php do_action( 'wpbf_before_loop' ); ?>
+					<?php
+					wp_link_pages( array(
+						'before' => '<div class="page-links">' . __( 'Pages:', 'page-builder-framework' ),
+						'after'  => '</div>',
+					) );
+					?>
 
-				<?php while ( have_posts() ) : the_post(); ?>
+					<?php do_action( 'wpbf_entry_content_close' ); ?>
 
-				<?php get_template_part( 'inc/template-parts/article' ); ?>
+				</div>
 
-				<?php endwhile; ?>
+				<?php endwhile; endif; ?>
 
-				<?php do_action( 'wpbf_after_loop' ); ?>
-
-				<?php else : ?>
-
-				<?php get_template_part( 'inc/template-parts/article-none' ); ?>
-
-				<?php endif; ?>
-
-				<?php do_action( 'wpbf_posts_pagination' ); ?>
+				<?php comments_template(); ?>
 
 				<?php do_action( 'wpbf_main_content_close' ); ?>
-					
-				</div>
 
 			</main>
 
