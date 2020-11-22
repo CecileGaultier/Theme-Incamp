@@ -1,16 +1,15 @@
-<?php
-/*Page accueil */
 
-/* Déclaration header */
-get_header(); ?>
+<!-- Appel header -->
+<?php get_header(); ?>
 
-<!-- Corps du body -->
-<div class="container-fluid mt-5">
+
+<div class="main single">
     <!-- Demande s'il y a des posts -->
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
             <div class="post">
-                <div id="carte" class="center"></div>
+                <!-- Appel le titre de la page -->
+                <h1 class="post-title"><?php the_title(); ?></h1>
 
                 <!-- Appel le contenu -->
                 <div class="post-content">
@@ -22,8 +21,5 @@ get_header(); ?>
     <?php endif; ?>
 </div>
 
-
-<?php 
-/* Déclaration footer */
-
-get_footer(); ?>
+<!-- Appel footer -->
+<?php get_footer(); ?>

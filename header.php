@@ -18,9 +18,11 @@ defined( 'ABSPATH' ) || die( "Can't access directly" );
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDmCf5PuwqxYCyJ5IKqyxNFURbMDKln_w"></script>
+
 </head>
 
-<body <?php body_class(); ?> <?php wpbf_body_schema_markup(); ?>>
+<body <?php body_class(); ?> <?php wpbf_body_schema_markup(); ?> onload="initCarte()">
 
 	<a class="screen-reader-text skip-link" href="#content" title="<?php echo esc_attr__( 'Skip to content', 'page-builder-framework' ); ?>"><?php _e( 'Skip to content', 'page-builder-framework' ); ?></a>
 
