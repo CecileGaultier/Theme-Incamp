@@ -24,16 +24,15 @@ Text Domain:	page-builder-framework-child
 	5. 	Boutons
 	6. 	Page Templates
 		a. 	Template: Guide
-		c. 	Template: Full Width
-	8.  Post: Archive
-	9.  Post: Single
-	10. Blocks
-	11. Entry Content
-	14. Error 404
-	15. Widgets
-	16. Site Footer
-    17. Media Queries
-    17. Decorations
+		b. 	Template: 
+	7.  Post: Archive
+	8.  Post: Single
+	9.  Block 
+	10. Error 404
+	11. Widgets
+	12. Site Footer
+    13. Media Queries
+    14. Decorations
 
 ----------------------------------------------------------------------------- */
 
@@ -170,10 +169,108 @@ header{
 }
 
 
+#guide-velo{
+    background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/rond-velo.png");
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+	margin: 1rem;
+	padding: 5rem;
+
+}
+
+#guide-covoiturage{
+    background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/rond-covoiturage.png");
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+	margin: 1rem;
+	padding: 5rem;
+
+}
+
+
+#guide-borne{
+    background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/rond-borne.png");
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+	margin: 1rem;
+	padding: 5rem;
+
+}
+
 
 /* -------------------------------------------------------------------------- */
 
-/*	16. Site Footer
+/*	6. Page Templates - b. 	Template: 
+/* -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	7. Post: Archive
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	8. Post: Single
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------- */
+/*	9. Block
+/* -------------------------------------------------------------------------- */
+
+
+.list-group-item{
+    margin: .5rem;
+    border: 1px solid #53956A;
+}
+
+
+.article-without-bootstrap{
+	display: block;
+	margin-bottom:1rem;
+	background-color: white;
+	max-width: 40%;
+}
+
+.text-without-bootstrap{
+	padding: .5rem;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	10. Error 404
+/* -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	11. Widgets
+/* -------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	12. Site Footer
 /* -------------------------------------------------------------------------- */
 footer fieldset button[type="submit"]{
     border-radius: 2rem;
@@ -211,7 +308,7 @@ footer i{
 
 /* -------------------------------------------------------------------------- */
 
-/*	17. Media Queries
+/*	13. Media Queries
 /* -------------------------------------------------------------------------- */
 
 @media screen and (min-width: 740px){
@@ -264,7 +361,7 @@ footer i{
 
 /* -------------------------------------------------------------------------- */
 
-/*		18. 	Decorations
+/*		14. 	Decorations
 /* -------------------------------------------------------------------------- */
 
 
