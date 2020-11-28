@@ -1,16 +1,15 @@
-/*
-Theme Name: Incamp
-Text Domain: incamp
-Version: 1
-Requires at least: 4.7
-Requires PHP: 5.2.4
-Description: Thème pour le wordpress du site Incamp
-Tags: 
-Author: Cécile Gaultier
-Author URI: https://cecile-gaultier.fr
-Site URI: https://incamp.ceccile-gaultier.fr
+/*!
+Theme Name:		Page Builder Framework - Child -Incamp
+Author: 		MapSteps - Cécile Gaultier
+Author URI: 	https://mapsteps.com - cecile-gaultier.fr
+Description:	Page Builder Framework Child Theme - Thème pour Incamp
+Version: 		1.2
+License:		GNU General Public License v3 or later
+License URI:	https://www.gnu.org/licenses/gpl-3.0.html
+Tags: 			one-column, two-columns, left-sidebar, right-sidebar, custom-colors, custom-menu, featured-images, full-width-template, custom-logo, custom-background, threaded-comments, blog, e-commerce
+Template:		page-builder-framework
+Text Domain:	page-builder-framework-child
 */
-
 
 
 /*--------------------------------------------------------------
@@ -18,25 +17,23 @@ Site URI: https://incamp.ceccile-gaultier.fr
 ----------------------------------------------------------------
 
 	0. 	CSS Reset
-	1. 	Document Setup
-	2. 	Element Base
-	3. 	Helper Classes
-	4. 	Site Header
-	5. 	Menu Modal
-	6. 	Search Modal
-	7. 	Page Templates
-		a. 	Template: Cover Template
+	1. 	Element Base
+    2. 	Site Header
+    3. 	Carte
+	4. 	Quiz
+	5. 	Boutons
+	6. 	Page Templates
+		a. 	Template: Guide
 		c. 	Template: Full Width
 	8.  Post: Archive
 	9.  Post: Single
 	10. Blocks
 	11. Entry Content
-	12. Comments
-	13. Site Pagination
 	14. Error 404
 	15. Widgets
 	16. Site Footer
-	17. Media Queries
+    17. Media Queries
+    17. Decorations
 
 ----------------------------------------------------------------------------- */
 
@@ -45,6 +42,134 @@ Site URI: https://incamp.ceccile-gaultier.fr
 
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+
+body{
+    font-family: "Kumbh Sans",sans-serif;
+	color: black;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*		1. 	Element Base
+/* -------------------------------------------------------------------------- */
+
+h1,h2{
+    border-left: #54966B 15px solid;
+    padding-left: .5rem;
+	margin-top: 2rem;
+    display: block;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: "Oswald",sans-serif;
+    font-weight: normal;
+}
+
+
+h3{
+    color: #54966B;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+}
+
+h5{
+    color: #3F7050;
+    font-size: 1.8rem;
+}
+
+
+span{
+    color: #54966B;
+    font-weight: bold;
+}
+
+a{
+	color: #54966B;
+	font-weight:bold;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*		2. 	Site Header
+/* -------------------------------------------------------------------------- */
+
+
+header{
+    background-color: #F6F6F6;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*		3. 	Carte
+/* -------------------------------------------------------------------------- */
+
+#carte{
+    height: 500px;
+    border: 4px solid #D7B344;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*		4. 	Quiz
+/* -------------------------------------------------------------------------- */
+
+
+.mlw_qmn_new_question{
+	font-size: 23px;
+}
+
+.qmn_mc_answer_wrap{
+	border: 1px solid #53956A;
+	margin: .5rem;
+	padding: .5rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*		5. 	Boutons
+/* -------------------------------------------------------------------------- */
+
+.next{
+	border: none;
+
+}
+
+.next:after{
+    background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/icone-fleche-droitz.svg");
+    content: "";
+    padding: 0 1rem 0 .8rem;
+    margin-left: .5rem;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	6. Page Templates - a. 	Template: Guide
+/* -------------------------------------------------------------------------- */
+
+#guide-top a:link{
+    color: white;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#guide-top a:visited{
+    color: white;
+}
+
+
 
 /* -------------------------------------------------------------------------- */
 
@@ -107,3 +232,59 @@ footer i{
         font-size: 3.2rem;
     }
 }
+
+
+@media (min-width: 1200px) {
+
+    #tepcv{
+        max-width: 100%;
+        background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/recycling.svg");
+        content: "";
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: 18%;
+        padding: 0 1rem 8rem;
+        background-position-y: 10rem;
+    }
+
+    #quiz{
+        max-width: 100%;
+        background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/ronds-bg-quiz.svg");
+        content: "";
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 0 1rem 8rem;
+		background-position-x: center;
+		background-position-y: 10rem;
+
+    }
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*		18. 	Decorations
+/* -------------------------------------------------------------------------- */
+
+
+#initiative-top{
+    background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/vague-jaune-ini.svg");
+    content: "";
+    padding: 0 1rem 0 .8rem;
+    background-repeat: no-repeat;
+}
+
+
+#guide-top{
+    background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/vague-jaune-guide.svg");
+    content: "";
+    padding: 0 1rem 0 .8rem;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: -2rem;
+    background-size: 120%;
+}
+
+
+

@@ -1,25 +1,49 @@
+<?php 
+/* Template Name: Guide
+ */
 
-<!-- Appel header -->
-<?php get_header(); ?>
+
+/* Déclaration header */
+get_header(); ?>
 
 
-<div class="main single">
-    <!-- Demande s'il y a des posts -->
-    <?php if (have_posts()) : ?>
-        <?php while (have_posts()) : the_post(); ?>
-            <div class="post">
-                <!-- Appel le titre de la page -->
-                <h1 class="post-title"><?php the_title(); ?></h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 col-lg-10 col-xl-8 center">
 
-                <!-- Appel le contenu -->
-                <div class="post-content">
-                    <?php the_content(); ?>
-                </div>
+
+            <div class="guide">
+                <?php wpbf_title(); ?>
+            </div>
+
+            <?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+            <div class="entry-content" itemprop="text">
+
+                <?php do_action( 'wpbf_entry_content_open' ); ?>
+
+                <?php the_content(); ?>
+
+                <?php
+                wp_link_pages( array(
+                    'before' => '<div class="page-links">' . __( 'Pages:', 'page-builder-framework' ),
+                    'after'  => '</div>',
+                ) );
+                ?>
+
+                <?php do_action( 'wpbf_entry_content_close' ); ?>
 
             </div>
-        <?php endwhile; ?>
-    <?php endif; ?>
+
+            <?php endwhile; endif; ?>
+
+
+        </div>
+
+    </div>
 </div>
 
-<!-- Appel footer -->
-<?php get_footer(); ?>
+<?php 
+/* Déclaration footer */
+
+get_footer(); ?>
