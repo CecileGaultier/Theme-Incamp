@@ -41,7 +41,7 @@
                             <a href="mailto:tepcv2020@gmail.com" class="text-secondary float-right">Nous contacter</a>
                         </div>
                         <div class="col-6">
-                            <a href="mentions-legales.html" class="text-secondary">Mentions légales</a>
+                            <a href="https://incamp.cecile-gaultier.fr/mentions-legales/" class="text-secondary">Mentions légales</a>
                         </div>
                     </div>
 

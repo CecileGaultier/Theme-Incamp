@@ -14,7 +14,6 @@ get_header();
 ?>
 
 <div id="content">
-  <p>jgrongvhriojbeior</p>
 
 	<?php do_action( 'wpbf_content_open' ); ?>
 	
