@@ -23,14 +23,7 @@ defined( 'ABSPATH' ) || die( "Can't access directly" );
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-B2Z41YHRVZ"></script>
-	<script>
-  	window.dataLayer = window.dataLayer || [];
-  	function gtag(){dataLayer.push(arguments);}
-  	gtag('js', new Date());
-
-  	gtag('config', 'G-B2Z41YHRVZ');
+	
 </script>
 
 </head>
