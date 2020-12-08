@@ -40,8 +40,8 @@ function montheme_supports () {
 function montheme_registers_assets() {
     wp_register_style('bootstrap','https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
     //Lie la bibliothèque Bootstrap à Popper, Jquery -> ne peuvent pas être importé avant Bootstrap
-    wp_register_script('bootstrap','https://code.jquery.com/jquery-3.4.1.slim.min.js', ['popper','jquery'], [], false, true);
-    wp_register_script('popper','https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js    ', [], false, true);
+    wp_register_script('bootstrap','https://code.jquery.com/jquery-3.5.1.min.js', ['popper','jquery'], [], false, true);
+    wp_register_script('popper','https://unpkg.com/@popperjs/core@2', [], false, true);
     wp_register_script('jquery','https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', [], false, true);
     wp_enqueue_style('bootstrap');
     wp_enqueue_script('bootstrap');
