@@ -15,7 +15,7 @@ get_header(); ?>
             <button class="btn" id="btn-accueil"><a href="https://incamp.cecile-gaultier.fr/presentation-des-initiatives/">DÉCOUVRIR</a></button>
         </div>
     </div>
-    <img src="http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/tepcv.png" class="img-fluid float-right" alt="Label TEPCV" style="max-width: 200px;">
+    <img src="https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/12/label-tepcv.png" class="img-fluid float-right" alt="Label TEPCV" style="max-width: 200px;">
 </div>
 
 
@@ -68,7 +68,7 @@ get_header(); ?>
                         <a href="#monCarousel"
                            class="carousel-control-prev"
                            data-slide="prev">
-                            <img src="http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/12/icone-fleche-carroussel-gauche.svg" alt="flèche gauche carroussel" class="img-fluid">
+                            <img src="https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/12/icone-fleche-carroussel-gauche.svg" alt="flèche gauche carroussel" class="img-fluid">
                         </a>
                     </div>
                     <div class="carousel-inner col-8">
@@ -126,7 +126,7 @@ get_header(); ?>
                         <a href="#monCarousel"
                            class="carousel-control-next"
                            data-slide="next">
-                            <img src="http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/12/icone-fleche-carroussel-droite.svg" alt="flèche droite carroussel" class="img-fluid">
+                            <img src="https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/12/icone-fleche-carroussel-droite.svg" alt="flèche droite carroussel" class="img-fluid">
 
                         </a>
                     </div>
