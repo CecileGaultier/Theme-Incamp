@@ -1,6 +1,5 @@
 <?php 
-/* Template Name: TEPCV
- */
+
 
 
 /* Déclaration header */
@@ -13,7 +12,7 @@ get_header(); ?>
             <img src="http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/logo.png" alt="Image logo Incamp" class="img-fluid" style="max-width: 100px">
             <h1 class="h1">CAMPUS DE MONTBÉLIARD</h1>
             <p>Territoire à énergie positive pour la croissance verte</p>
-            <button class="btn" id="btn-reveal btn-accueil"><a href="https://incamp.cecile-gaultier.fr/presentation-des-initiatives/">DÉCOUVRIR</a></button>
+            <button class="btn" id="btn-accueil"><a href="https://incamp.cecile-gaultier.fr/presentation-des-initiatives/">DÉCOUVRIR</a></button>
         </div>
     </div>
     <img src="http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/tepcv.png" class="img-fluid float-right" alt="Label TEPCV" style="max-width: 200px;">

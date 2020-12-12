@@ -56,7 +56,6 @@
     </div>
 </footer>
 
-<script src="js/scroll.js"></script>
 
 <? wp_footer()?>
 </body>

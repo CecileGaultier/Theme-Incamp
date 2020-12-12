@@ -43,8 +43,15 @@ function montheme_registers_assets() {
     wp_register_script('bootstrap','https://code.jquery.com/jquery-3.5.1.min.js', ['popper','jquery'], [], false, true);
     wp_register_script('popper','https://unpkg.com/@popperjs/core@2', [], false, true);
     wp_register_script('jquery','https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', [], false, true);
+
+    //Google Maps
+    wp_register_script('maps','https://incamp.cecile-gaultier.fr/wp-content/themes/page-builder-framework-child/js/geoloc.js');
+    wp_register_script('googlemaps','https://maps.googleapis.com/maps/api/js?key=AIzaSyCDmCf5PuwqxYCyJ5IKqyxNFURbMDKln_w');
+
     wp_enqueue_style('bootstrap');
     wp_enqueue_script('bootstrap');
+    wp_enqueue_script('maps');
+    wp_enqueue_script('googlemaps');
 }
 
 //Lance les importations
