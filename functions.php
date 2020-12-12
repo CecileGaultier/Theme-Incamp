@@ -38,6 +38,11 @@ function montheme_supports () {
 
 
 function montheme_registers_assets() {
+
+    //Fontawesome
+    wp_register_script('fontawesome','https://kit.fontawesome.com/743d8e6470.js');
+
+    //Bootstrap
     wp_register_style('bootstrap','https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
     //Lie la bibliothèque Bootstrap à Popper, Jquery -> ne peuvent pas être importé avant Bootstrap
     wp_register_script('bootstrap','https://code.jquery.com/jquery-3.5.1.min.js', ['popper','jquery'], [], false, true);
@@ -48,8 +53,11 @@ function montheme_registers_assets() {
     wp_register_script('maps','https://incamp.cecile-gaultier.fr/wp-content/themes/page-builder-framework-child/js/geoloc.js');
     wp_register_script('googlemaps','https://maps.googleapis.com/maps/api/js?key=AIzaSyCDmCf5PuwqxYCyJ5IKqyxNFURbMDKln_w');
 
+    wp_enqueue_script('fontawesome');
+
     wp_enqueue_style('bootstrap');
     wp_enqueue_script('bootstrap');
+
     wp_enqueue_script('maps');
     wp_enqueue_script('googlemaps');
 }

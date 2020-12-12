@@ -23,13 +23,13 @@
                 <div class="col-12">
                     <fieldset>
                         <div class="form-group">
-                            <label for="title" class="d-none d-md-block mb-2">Inscrivez-vous à notre newsletter</label>
-                            <div class="d-flex" id="newsletter">
-                                <input type="text" id="title" name="text" class="form-control" placeholder="Votre adresse email ...">
-                                <button class="btn text-light" type="submit">S'INSCRIRE</button>
-                            </div>
-
-
+                            <p class="d-none d-md-block mb-2"><b>Inscrivez-vous à notre newsletter</b></p>
+                            <p>En vous inscrivant à la newsletter, vous recevrez les dernières actualités d'Incamp par mail et gratuitement !</p>
+                            <button class="btn " type="submit">
+                                <a class="text-light" href="https://incamp.cecile-gaultier.fr/newsletter/">S'INSCRIRE</a>
+                            </button>
+                            
+                        
                         </div>
 
                     </fieldset>
