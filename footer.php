@@ -28,23 +28,15 @@
                             <button class="btn " type="submit">
                                 <a class="text-light" href="https://incamp.cecile-gaultier.fr/newsletter/">S'INSCRIRE</a>
                             </button>
+                            <a href="mailto:tepcv2020@gmail.com" class="text-secondary float-right">Nous contacter</a>
+                            <a href="https://incamp.cecile-gaultier.fr/mentions-legales/" class="text-secondary">Mentions légales et crédits</a>
+
+
                             
                         
                         </div>
 
                     </fieldset>
-                </div>
-
-                <div class="col-md-12 py-3" id="footer">
-                    <div class="row">
-                        <div class="col-6">
-                            <a href="mailto:tepcv2020@gmail.com" class="text-secondary float-right">Nous contacter</a>
-                        </div>
-                        <div class="col-6">
-                            <a href="https://incamp.cecile-gaultier.fr/mentions-legales/" class="text-secondary">Mentions légales et crédits</a>
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
