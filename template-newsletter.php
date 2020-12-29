@@ -20,7 +20,7 @@ get_header(); ?>
 
                 <?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-                <div class="entry-content" itemprop="text">
+                <div class="entry-content" itemprop="text" class="px-5">
 
                     <?php do_action( 'wpbf_entry_content_open' ); ?>
 
@@ -38,7 +38,7 @@ get_header(); ?>
                 </div>
 
                 <?php endwhile; endif; ?>
-                <div class="col-md-6 ml-5 my-5">
+                <div class="col-md-6 ml-md-5 my-md-5">
                     
                     <?php echo do_shortcode("[sibwp_form id=3]"); ?>
                     
