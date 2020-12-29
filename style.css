@@ -20,19 +20,16 @@ Text Domain:	page-builder-framework-child
 	1. 	Element Base
     2. 	Site Header
     3. 	Carte
-	4. 	Quiz
-	5. 	Boutons
-	6. 	Page Templates
-		a. 	Template: Guide
-		b. 	Template: 
-	7.  Post: Archive
-	8.  Post: Single
-	9.  Block 
-	10. Error 404
-	11. Widgets
-	12. Site Footer
-    13. Media Queries
-    14. Decorations
+    4.  Carousel
+	5. 	Quiz
+	6. 	Boutons
+	7. 	Page Templates
+		a. 	Template: Accueil
+		b. 	Template: Guide
+	8.  Block 
+	9. Déco
+	10. Site Footer
+    11. Media Queries
 
 ----------------------------------------------------------------------------- */
 
@@ -42,8 +39,9 @@ Text Domain:	page-builder-framework-child
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 body{
     font-family: "Kumbh Sans",sans-serif;
@@ -55,6 +53,14 @@ body{
 
 /*		1. 	Element Base
 /* -------------------------------------------------------------------------- */
+
+h1{
+	font-size: 3rem;
+}
+
+.h1{
+	border:none;
+}
 
 h1,h2{
     border-left: #54966B 15px solid;
@@ -68,38 +74,67 @@ h1,h2,h3,h4,h5{
     font-weight: normal;
 }
 
+h2{
+	font-size: 2.3rem;
+}
 
 h3{
     color: #54966B;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
+}
 
+h4{
+    font-size: 1.8rem;
 }
 
 h5{
     color: #3F7050;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
-
 
 span{
     color: #54966B;
     font-weight: bold;
 }
-
 a{
 	color: #54966B;
 	font-weight:bold;
+}
+
+a:hover{
+	color: #2C6642;
+}
+
+
+.lien{
+    color: #54966B;
+    font-weight: bold;
+}
+
+a:visited.lien {
+    color: #54966B;
+    font-weight: bold;
+}
+
+.anecdocte-1{
+    background-color: #D7B344;
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: center;
 }
 
 blockquote{
     border-left : #D7B344 5px solid;
     font-size: 20px;
     font-style: normal;
-    
 }
 
+.center{
+    display: block;
+    margin: 2rem auto;
+}
 
 /* -------------------------------------------------------------------------- */
 
@@ -117,13 +152,36 @@ header{
 /* -------------------------------------------------------------------------- */
 
 #carte{
-    height: 500px;
+    height: 650px;
     border: 4px solid #D7B344;
+	margin-bottom: 3rem;
+}
+
+.carte-img {
+    width: 200px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*		4. 	Carousel
+/* -------------------------------------------------------------------------- */
+
+#monCarousel img{
+    margin-bottom: 1rem;
+}
+
+.carousel-indicators li{
+    background-color: #3F7050;
+}
+
+.carousel-indicators li.active{
+    background: #55B288;
 }
 
 /* -------------------------------------------------------------------------- */
 
-/*		4. 	Quiz
+/*		5. 	Quiz
 /* -------------------------------------------------------------------------- */
 
 
@@ -137,10 +195,9 @@ header{
 	padding: .5rem;
 }
 
-
 /* -------------------------------------------------------------------------- */
 
-/*		5. 	Boutons
+/*		6. 	Boutons
 /* -------------------------------------------------------------------------- */
 
 .next{
@@ -149,7 +206,7 @@ header{
 }
 
 .next:after{
-    background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/icone-fleche-droitz.svg");
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/icone-fleche-droitz.svg");
     content: "";
     padding: 0 1rem 0 .8rem;
     margin-left: .5rem;
@@ -158,10 +215,67 @@ header{
 }
 
 
+btn{
+    background-color: #18BDC9;
+}
+
+btn a:link {
+    color: white;
+    font-family: "Oswald",sans-serif;
+    font-weight: normal;
+    letter-spacing: 3px
+}
+
+.btn{
+    background-color: #18BDC9;
+}
+
+.btn a:link {
+    color: white;
+    font-family: "Oswald",sans-serif;
+    font-weight: normal;
+    letter-spacing: 3px
+}
+
+#btn-accueil{
+    font-size: 30px;
+	color: white;
+}
+
+#btn-accueil a:visited{
+	color: white;
+}
+
 
 /* -------------------------------------------------------------------------- */
 
-/*	6. Page Templates - a. 	Template: Guide
+/*	7. Page Templates - a. 	Template: Accueil
+/* -------------------------------------------------------------------------- */
+
+#accueil{
+    max-width: 100%;
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/DSC_0397-scaled.jpg");
+    content: "";
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+    padding: 0 1rem 8rem;
+
+}
+
+#accueil-center{
+    display: block;
+    background-color: rgba(255,255,255,.85);
+    margin: 2rem auto;
+}
+
+.icone-acc{
+	padding:0.5rem
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*	7. Page Templates - b. 	Template: Guide
 /* -------------------------------------------------------------------------- */
 
 #guide-top a:link{
@@ -176,70 +290,174 @@ header{
 }
 
 
+
 #guide-velo{
-    background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/rond-velo.png");
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/rond-velo.png");
     content: "";
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
     background-position-y: center;
 	margin: 1rem;
-	padding: 5rem;
+	padding: 2.5rem;
 
 }
 
 #guide-covoiturage{
-    background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/rond-covoiturage.png");
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/rond-covoiturage.png");
     content: "";
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
     background-position-y: center;
 	margin: 1rem;
-	padding: 5rem;
+	padding: 3rem;
 
 }
 
 
 #guide-borne{
-    background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/rond-borne.png");
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/rond-borne.png");
     content: "";
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
     background-position-y: center;
 	margin: 1rem;
-	padding: 5rem;
+	padding: 3rem;
+
+}
+
+.etape{
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+}
+
+
+#etape-velo-1{
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/guide-velo-1.png");
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 2rem;
+}
+
+#etape-velo-2{
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/guide-velo-2.png");
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 2rem;
+}
+
+#etape-velo-3{
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/guide-velo-3.png");
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 2rem;
+
+}
+
+#etape-velo-4{
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/guide-velo-4.png");
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 2rem;
+
+}
+
+
+#etape-covoiturage-1{
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/guide-covoiturage-1.png");
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 2rem;
+
+}
+
+#etape-covoiturage-2{
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/guide-covoiturage-2.png");
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 2rem;
+
+}
+
+#etape-covoiturage-3{
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/guide-covoiturage-3.png");
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 2rem;
+
+}
+
+#etape-covoiturage-4{
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/guide-covoiturage-4.png");
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 2rem;
+
+}
+
+#etape-borne-1{
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/guide-borne-1.png");
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 2rem;
+
+}
+
+#etape-borne-2{
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/guide-borne-2.png");
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 2rem;
+
+}
+
+#etape-borne-3{
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/guide-borne-3.png");
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 2rem;
 
 }
 
 
 /* -------------------------------------------------------------------------- */
-
-/*	6. Page Templates - b. 	Template: 
-/* -------------------------------------------------------------------------- */
-
-
-/* -------------------------------------------------------------------------- */
-
-/*	7. Post: Archive
-/* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- */
-
-
-
-/* -------------------------------------------------------------------------- */
-
-/*	8. Post: Single
-/* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- */
-
-
-
-/* -------------------------------------------------------------------------- */
-/*	9. Block
+/*	8. Block
 /* -------------------------------------------------------------------------- */
 
 
@@ -253,7 +471,11 @@ header{
 	display: block;
 	margin-bottom:1rem;
 	background-color: white;
-	max-width: 40%;
+	margin-left: 0;
+	box-shadow: 5px 5px 5px rgba(224,224,224,0.3);
+	border : 1px solid #E9E9E9;
+	border-radius : .5rem;
+
 }
 
 .text-without-bootstrap{
@@ -261,24 +483,75 @@ header{
 }
 
 
+/* -------------------------------------------------------------------------- */
+
+/*	9. Déco
+/* -------------------------------------------------------------------------- */
+
+#initiative-top{
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/vague-jaune-ini.svg");
+    content: "";
+    padding: 0 1rem 0 .8rem;
+    background-repeat: no-repeat;
+}
+
+#initiative-bottom{
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/Vague-verte.png");
+    content: "";
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+	background-size: 120%;
+
+}
+
+
+#newsletter-page{
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/Vague-verte.png");
+    content: "";
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+#newsletter-page .row{
+	margin:0;
+}
+
+
+#error{
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/Vague-verte-1.png");
+    content: "";
+    padding: 0 1rem 0 .8rem;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100%;
+}
+
+#guide-top{
+    background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/Vague-verte.png");
+    content: "";
+    padding: 0 1rem 0 .8rem;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: -2rem;
+    background-size: 120%;
+}
+
+
+
+
 
 /* -------------------------------------------------------------------------- */
 
-/*	10. Error 404
+/*	10. Site Footer
 /* -------------------------------------------------------------------------- */
 
 
-/* -------------------------------------------------------------------------- */
+footer p{
+	font-size: 15px;
+}
 
-/*	11. Widgets
-/* -------------------------------------------------------------------------- */
-
-
-
-/* -------------------------------------------------------------------------- */
-
-/*	12. Site Footer
-/* -------------------------------------------------------------------------- */
 footer fieldset button[type="submit"]{
     border-radius: 2rem;
     font-family: "Oswald",sans-serif;
@@ -289,9 +562,13 @@ footer fieldset button[type="submit"]{
 #newsletter{
     background-color: white;
     border-radius: 2rem;
-    padding: .4rem;
+    padding: .6rem;
     border: 1px solid #3F7050;
     font-size: .8rem;
+}
+
+.text-newsletter{
+	margin-top: 2rem;
 }
 
 #title{
@@ -306,20 +583,28 @@ footer fieldset button[type="submit"]{
 footer{
     background-color: #F2F2F2;
     font-size: .8rem;
+	padding-bottom: 1rem;
 }
 
 footer i{
     color: black;
 }
 
+footer a:link{
+	font-size: 14px;
+}
+
 
 /* -------------------------------------------------------------------------- */
 
-/*	13. Media Queries
+/*	11. Media Queries
 /* -------------------------------------------------------------------------- */
 
 @media screen and (min-width: 740px){
-
+	#mode-all .wp-block-column:not(:first-child){
+		margin-left:0;
+	}
+	
     #guide-top{
         padding-bottom: 25rem;
     }
@@ -330,15 +615,112 @@ footer i{
     }
 }
 
+@media screen and (max-width: 780px){
+	#barre{
+		display:none;
+	}
+	
+	#av-barre{
+		margin-right:1rem;
+	}
+	
+	h1.h1{
+		font-size:2rem;
+	}
+}
+
 @media screen and (max-width: 440px){
 
     .etape{
         font-size: 3.2rem;
     }
+	
+	#barre{
+		display:none;
+	}
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) and (max-width:1359px) {
+	#mode-all .wp-block-column:not(:first-child){
+		margin-left:0;
+	}
+	
+	#guide-velo{
+	padding: 3rem;
+
+	}
+	
+
+	#guide-covoiturage{
+		padding: 3rem;
+
+	}
+
+
+	#guide-borne{
+		padding: 3rem;
+
+	}
+}
+
+@media (min-width: 1400px) {
+
+    #parking{
+        max-width: 100%;
+        background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/car1.svg");
+        content: "";
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: 23%;
+        padding: 0 1rem 8rem;
+        background-position-y: 10rem;
+    }
+
+    #ombriere{
+        max-width: 100%;
+        background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/eco_car1.svg");
+        content: "";
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: 23%;
+        padding: 0 1rem 8rem;
+        background-position-y: 10rem;
+    }
+
+    #velo{
+        max-width: 100%;
+        background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/bicycle.svg");
+        content: "";
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: 23%;
+        padding: 0 1rem 8rem;
+        background-position-y: 10rem;
+
+    }
+
+    #jardins{
+        max-width: 100%;
+        background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/watering_plant.svg");
+        content: "";
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: 23%;
+        padding: 0 1rem 8rem;
+        background-position-y: 10rem;
+    }
+
+    #abeille{
+        max-width: 100%;
+        background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/Groupe-284.svg");
+        content: "";
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: 15%;
+        padding: 0 1rem 8rem;
+        background-position-y: 15rem;
+    }
 
     #tepcv{
         max-width: 100%;
@@ -362,33 +744,40 @@ footer i{
 		background-position-y: 10rem;
 
     }
+	
+	#guide-velo{
+	padding: 5rem;
+
+	}
+
+	#guide-covoiturage{
+		padding: 5rem;
+
+	}
+
+
+	#guide-borne{
+		padding: 4.5rem;
+
+	}
+	
 }
 
+@media (min-width: 2000px) {
+	#guide-velo{
+	padding: 6.8rem;
+
+	}
+
+	#guide-covoiturage{
+		padding: 6.8rem;
+
+	}
 
 
-/* -------------------------------------------------------------------------- */
+	#guide-borne{
+		padding: 6.5rem;
 
-/*		14. 	Decorations
-/* -------------------------------------------------------------------------- */
-
-
-#initiative-top{
-    background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/vague-jaune-ini.svg");
-    content: "";
-    padding: 0 1rem 0 .8rem;
-    background-repeat: no-repeat;
+	}
 }
-
-
-#guide-top{
-    background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/vague-jaune-guide.svg");
-    content: "";
-    padding: 0 1rem 0 .8rem;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: -2rem;
-    background-size: 120%;
-}
-
-
 

@@ -132,7 +132,7 @@ function initCarte() {
         position : posVelo1,      //Position du marker
         map : carte,             //carte d'affichage
         icon: {
-            url: "https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/12/velo-map.svg",
+            url: "https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/12/Groupe_288.svg",
             scaledSize: new google.maps.Size(64, 64)
 
         }
@@ -210,7 +210,7 @@ function initCarte() {
 
     //Marqueur du jardin 1
     //Position du marqueur
-    var posJardin1 = new google.maps.LatLng(47.494629, 6.803316);
+    var posJardin1 = new google.maps.LatLng(47.495372, 6.804997);
 
     //Le marker
     var marqueurJardin1 = new google.maps.Marker({
@@ -249,7 +249,8 @@ function initCarte() {
     var infoparking = new google.maps.InfoWindow();
     //Charger le contenu
     var contenu2 =
-        "<div><h4 class='h4'>Parking</h4>"
+        "<div><h4 class='h4'>Borne de rechargement</h4>"
+        +"<p>Une borne de rechargement est disponible <br> pour recharger deux véhicules électriques <br>simultanément</p>"
         +"<a href='parking.html'><img src='https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/DSC_0407-scaled.jpg' alt='Image parking' class='carte-img'></a>"
         +"</div>";
     infoparking.setContent(contenu2);
@@ -267,11 +268,20 @@ function initCarte() {
     //Instanciation d'une Info-bulle / InfoWindow
     var infovelo1 = new google.maps.InfoWindow();
     //Charger le contenu
-    var contenu3 =
-        "<div><h4 class='h4'>Vélo</h4>"
+
+    var contenu3a =
+        "<div><h4 class='h4'>Station connectée</h4>"
+        +"<p>Cette station contient des boxs avec recharge <br>électrique pour ranger et recharger vos vélos <br>électriques</p>"
         +"<a href='velo.html'><img src='https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/DSC_0394-scaled.jpg' alt='Image vélo' class='carte-img'></a>"
         +"</div>";
-    infovelo1.setContent(contenu3);
+    infovelo1.setContent(contenu3a);
+
+
+    var contenu3 =
+        "<div><h4 class='h4'>Abris vélos</h4>"
+        +"<p>Les abris vélos vous permettent de <br>ranger en sécurité vos vélos dans des boxs</p>"
+        +"<a href='velo.html'><img src='https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/DSC_0394-scaled.jpg' alt='Image vélo' class='carte-img'></a>"
+        +"</div>";
 
     //Affichage lors d'un clic sur le marqueur parking
     //Evenement click sur le marqueur velo 1
@@ -351,7 +361,8 @@ function initCarte() {
 
     //Charger le contenu
     var contenu4 =
-        "<div><h4 class='h4'>Jardins</h4>"
+        "<div><h4 class='h4'>Jardin de l’UFR STGI</h4>"
+        +"<p>Les jardins de l’UFR STGI <br>regorgent de fruits et légumes délicieux</p>"
         +"<a href='jardin.html'><img src='https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/DSC_0317-scaled.jpg' alt='Image jardin' class='carte-img'></a>"
         +"</div>";
     infojardin1.setContent(contenu4);
@@ -369,7 +380,12 @@ function initCarte() {
     var infojardin2 = new google.maps.InfoWindow();
 
     //Charger le contenu
-    infojardin2.setContent(contenu4);
+    var contenu5 =
+        "<div><h4 class='h4'>Jardins de la Mémo</h4>"
+        +"<p>Les jardins partagés de la Mémo <br>regorgent de légumes et d’aromates</p>"
+        +"<a href='jardin.html'><img src='https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/DSC_0317-scaled.jpg' alt='Image jardin' class='carte-img'></a>"
+        +"</div>";
+    infojardin2.setContent(contenu5);
 
     //Affichage lors d'un clic sur le marqueur parking
     //Evenement click sur le jardin 2
