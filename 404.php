@@ -18,7 +18,7 @@ get_header(); ?>
                     <div class="mt-5">
                         <h4 class="h4">O U P S !</h4>
                         <p>La page que vous recherchez n'a pas été trouvée </p>
-                        <button class="btn"><a href="index.html">RETOUR À L'ACCUEIL</a></button>
+                        <button class="btn"><a href="https://incamp.cecile-gaultier.fr/">RETOUR À L'ACCUEIL</a></button>
                     </div>
 
                 </div>

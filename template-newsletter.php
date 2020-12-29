@@ -20,7 +20,7 @@ get_header(); ?>
 
                 <?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-                <div class="entry-content" itemprop="text" class="px-5">
+                <div class="entry-content px-3" itemprop="text">
 
                     <?php do_action( 'wpbf_entry_content_open' ); ?>
 
