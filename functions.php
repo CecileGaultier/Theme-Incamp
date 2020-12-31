@@ -43,11 +43,11 @@ function montheme_registers_assets() {
     wp_register_script('fontawesome','https://kit.fontawesome.com/743d8e6470.js');
 
     //Bootstrap
-    wp_register_style('bootstrap','https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+    wp_register_style('bootstrap','https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
     //Lie la bibliothèque Bootstrap à Popper, Jquery -> ne peuvent pas être importé avant Bootstrap
-    wp_register_script('bootstrap','https://code.jquery.com/jquery-3.5.1.min.js', ['popper','jquery'], [], false, true);
-    wp_register_script('popper','https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', [], false, true);
-    wp_register_script('jquery','https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', [], false, true);
+    wp_enqueue_script( 'jquery','https://code.jquery.com/jquery-3.3.1.slim.min.js', array( 'jquery' ),'',true );
+    wp_enqueue_script( 'popper','https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', array( 'jquery' ),'',true );
+    wp_enqueue_script( 'bootstrap','https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', array( 'jquery' ),'',true );
 
     //Google Maps
     wp_register_script('maps','https://incamp.cecile-gaultier.fr/wp-content/themes/page-builder-framework-child/js/geoloc.js');

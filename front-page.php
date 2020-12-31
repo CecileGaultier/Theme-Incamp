@@ -56,7 +56,7 @@ get_header(); ?>
 <div class="container-fluid">
     <div class=" md-mx-5 mt-5">
         <div class="row">
-            <div class="col-md-10 col-lg-11 col-xl-8 shadow-sm mb-5 bg-white center" >
+            <div class="col-md-8 col-lg-10 col-xl-6 shadow-sm mb-5 bg-white center" >
                 <div class="row carousel p-5" data-interval="2000" id="monCarousel">
 
                     <ol class="carousel-indicators">
