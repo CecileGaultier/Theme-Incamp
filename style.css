@@ -158,7 +158,7 @@ header{
 }
 
 .carte-img {
-    width: 200px;
+    width: 250px;
 }
 
 
@@ -606,7 +606,7 @@ footer a:link{
 	}
 	
     #guide-top{
-        padding-bottom: 25rem;
+        padding-bottom: 10rem;
     }
 
     #error{

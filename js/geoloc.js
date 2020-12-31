@@ -251,7 +251,7 @@ function initCarte() {
     var contenu2 =
         "<div><h4 class='h4'>Borne de rechargement</h4>"
         +"<p>Une borne de rechargement est disponible <br> pour recharger deux véhicules électriques <br>simultanément</p>"
-        +"<a href='parking.html'><img src='https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/DSC_0407-scaled.jpg' alt='Image parking' class='carte-img'></a>"
+        +"<a href='https://incamp.cecile-gaultier.fr/le-covoiturage-et-le-parking-connecte/'><img src='https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/DSC_0407-scaled.jpg' alt='Image parking' class='carte-img'></a>"
         +"</div>";
     infoparking.setContent(contenu2);
 
@@ -272,7 +272,7 @@ function initCarte() {
     var contenu3a =
         "<div><h4 class='h4'>Station connectée</h4>"
         +"<p>Cette station contient des boxs avec recharge <br>électrique pour ranger et recharger vos vélos <br>électriques</p>"
-        +"<a href='velo.html'><img src='https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/DSC_0394-scaled.jpg' alt='Image vélo' class='carte-img'></a>"
+        +"<a href='https://incamp.cecile-gaultier.fr/les-stations-velos/'><img src='https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/DSC_0394-scaled.jpg' alt='Image vélo' class='carte-img'></a>"
         +"</div>";
     infovelo1.setContent(contenu3a);
 
@@ -280,7 +280,7 @@ function initCarte() {
     var contenu3 =
         "<div><h4 class='h4'>Abris vélos</h4>"
         +"<p>Les abris vélos vous permettent de <br>ranger en sécurité vos vélos dans des boxs</p>"
-        +"<a href='velo.html'><img src='https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/DSC_0394-scaled.jpg' alt='Image vélo' class='carte-img'></a>"
+        +"<a href='https://incamp.cecile-gaultier.fr/les-stations-velos/'><img src='https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/DSC_0394-scaled.jpg' alt='Image vélo' class='carte-img'></a>"
         +"</div>";
 
     //Affichage lors d'un clic sur le marqueur parking
@@ -363,7 +363,7 @@ function initCarte() {
     var contenu4 =
         "<div><h4 class='h4'>Jardin de l’UFR STGI</h4>"
         +"<p>Les jardins de l’UFR STGI <br>regorgent de fruits et légumes délicieux</p>"
-        +"<a href='jardin.html'><img src='https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/DSC_0317-scaled.jpg' alt='Image jardin' class='carte-img'></a>"
+        +"<a href='https://incamp.cecile-gaultier.fr/vegetalisation-du-campus/'><img src='https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/DSC_0317-scaled.jpg' alt='Image jardin' class='carte-img'></a>"
         +"</div>";
     infojardin1.setContent(contenu4);
 
@@ -383,7 +383,7 @@ function initCarte() {
     var contenu5 =
         "<div><h4 class='h4'>Jardins de la Mémo</h4>"
         +"<p>Les jardins partagés de la Mémo <br>regorgent de légumes et d’aromates</p>"
-        +"<a href='jardin.html'><img src='https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/DSC_0317-scaled.jpg' alt='Image jardin' class='carte-img'></a>"
+        +"<a href='https://incamp.cecile-gaultier.fr/vegetalisation-du-campus/'><img src='https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/DSC_0317-scaled.jpg' alt='Image jardin' class='carte-img'></a>"
         +"</div>";
     infojardin2.setContent(contenu5);
 
