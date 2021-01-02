@@ -5,7 +5,7 @@
             <div class="col-md-4 pl-3">
                 <img src="http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/logo-accueil.png" alt="Image logo Incamp" class="img-fluid mb-2" style="max-width: 200px">
                 <p>
-                    InCamp, c'est une plateforme où vous pouvez retrouver toutes les initiatives vertes du campus de Montbéliard
+                    InCamp est une plateforme où vous pouvez retrouver toutes les initiatives vertes du campus de Montbéliard
                 </p>
 
                 <div class="">
@@ -24,7 +24,7 @@
                     <fieldset>
                         <div class="form-group">
                             <p class="d-none d-md-block mb-2"><b>Inscrivez-vous à notre newsletter</b></p>
-                            <p>En vous inscrivant à la newsletter, vous recevrez les dernières actualités d'Incamp par mail et gratuitement !</p>
+                            <p>En vous inscrivant à la newsletter, vous recevrez les dernières actualités InCamp par mail et gratuitement !</p>
                             <button class="btn " type="submit">
                                 <a class="text-light" href="https://incamp.cecile-gaultier.fr/newsletter/">S'INSCRIRE</a>
                             </button>

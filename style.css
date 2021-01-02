@@ -144,6 +144,9 @@ blockquote{
 
 header{
     background-color: #F6F6F6;
+	position : sticky;
+	z-index:99;
+	top : 0;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -544,6 +547,8 @@ btn a:link {
 
 
 
+
+
 /* -------------------------------------------------------------------------- */
 
 /*	10. Site Footer
@@ -583,6 +588,7 @@ footer fieldset button[type="submit"]{
 }
 
 footer{
+	position: sticky;
     background-color: #F2F2F2;
     font-size: .8rem;
 	padding-bottom: 1rem;
@@ -671,7 +677,7 @@ footer a:link{
 
     #tepcv{
         max-width: 100%;
-        background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/recycling.svg");
+        background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/recycling.svg");
         content: "";
         background-repeat: no-repeat;
         background-position-x: right;
@@ -682,7 +688,7 @@ footer a:link{
 
     #quiz{
         max-width: 100%;
-        background-image: url("https://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/ronds-bg-quiz.svg");
+        background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/ronds-bg-quiz.svg");
         content: "";
         background-repeat: no-repeat;
         background-size: 100%;
