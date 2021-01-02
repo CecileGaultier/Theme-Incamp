@@ -190,10 +190,12 @@ header{
 }
 
 .qmn_mc_answer_wrap{
-	border: 1px solid #53956A;
 	margin: .5rem;
 	padding: .5rem;
+	font-size: 1.3rem;
+
 }
+
 
 /* -------------------------------------------------------------------------- */
 
@@ -666,61 +668,6 @@ footer a:link{
 
 @media (min-width: 1400px) {
 
-    #parking{
-        max-width: 100%;
-        background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/car1.svg");
-        content: "";
-        background-repeat: no-repeat;
-        background-position-x: right;
-        background-size: 23%;
-        padding: 0 1rem 8rem;
-        background-position-y: 10rem;
-    }
-
-    #ombriere{
-        max-width: 100%;
-        background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/eco_car1.svg");
-        content: "";
-        background-repeat: no-repeat;
-        background-position-x: right;
-        background-size: 23%;
-        padding: 0 1rem 8rem;
-        background-position-y: 10rem;
-    }
-
-    #velo{
-        max-width: 100%;
-        background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/bicycle.svg");
-        content: "";
-        background-repeat: no-repeat;
-        background-position-x: right;
-        background-size: 23%;
-        padding: 0 1rem 8rem;
-        background-position-y: 10rem;
-
-    }
-
-    #jardins{
-        max-width: 100%;
-        background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/watering_plant.svg");
-        content: "";
-        background-repeat: no-repeat;
-        background-position-x: right;
-        background-size: 23%;
-        padding: 0 1rem 8rem;
-        background-position-y: 10rem;
-    }
-
-    #abeille{
-        max-width: 100%;
-        background-image: url("http://incamp.cecile-gaultier.fr/wp-content/uploads/2020/11/Groupe-284.svg");
-        content: "";
-        background-repeat: no-repeat;
-        background-position-x: right;
-        background-size: 15%;
-        padding: 0 1rem 8rem;
-        background-position-y: 15rem;
-    }
 
     #tepcv{
         max-width: 100%;
